@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 62px);
+  background-color: var(--primary-background);
+}
+
+* {
+  box-sizing: border-box;
+  --primary-background: rgb(43, 42, 51);
+  --secondary-background: #42414d;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#editDialog {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  width: 35%;
+  padding-bottom: 0.5rem;
+  background-color: var(--primary-background);
+  z-index: 1001;
+}
+
+#editDialog div {
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+#editDialog input {
+  width: 50%;
+}
+
+#editDialog label {
+  margin-right: 1rem;
+}
+
+#editDialog button {
+  padding: 0.25rem 2rem;
+}
+
+#darkenedBack {
+  display: none;
+  position: absolute;
+	width:100%; height:100%;
+	top: 0;
+	background-color: rgba(0,0,0,.75);
+	z-index: 1000;
+}
